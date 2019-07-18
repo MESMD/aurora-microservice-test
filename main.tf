@@ -9,7 +9,7 @@ resource "aws_rds_cluster" "postgresql" {
   preferred_backup_window             = "${var.rds_preferred_backup_window}"
   deletion_protection                 = "${var.rds_deletion_protection}"
   port                                = "${var.rds_port}"
-  vpc_security_group_ids              = ["${var.rds_vpc_security_group_ids}"]
+  #vpc_security_group_ids              = ["${var.rds_vpc_security_group_ids}"]
   storage_encrypted                   = true
   iam_database_authentication_enabled = true
   engine_mode                         = "serverless"
