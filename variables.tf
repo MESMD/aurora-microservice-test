@@ -4,7 +4,6 @@ variable "rds_engine" {
 }
 
 variable "rds_vpc_security_group_ids" {
-  default = null
 }
 
 variable "rds_database_name" {
