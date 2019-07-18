@@ -3,8 +3,8 @@ variable "rds_engine" {
   default     = "aurora"
 }
 
-variable "rds_vpc_security_group_ids" {
-}
+#variable "rds_vpc_security_group_ids" {
+#}
 
 variable "rds_database_name" {
   description = "name of the database"
