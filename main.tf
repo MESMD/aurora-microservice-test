@@ -3,8 +3,8 @@ resource "aws_rds_cluster" "postgresql" {
   engine                              = "aurora"
   availability_zones                  = ["us-west-2a", "us-west-2b", "us-west-3b"]
   database_name                       = "${var.rds_database_name}"
-  master_username                     = "foo"
-  master_password                     = "bar"
+  master_username                     = "foobar123"
+  master_password                     = "barfoo123"
   backup_retention_period             = "${var.rds_backup_retention_period}"
   preferred_backup_window             = "${var.rds_preferred_backup_window}"
   deletion_protection                 = "${var.rds_deletion_protection}"
